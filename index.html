@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 133, 183);">
+    <div style="text-align: center; border: 10px solid rgb(10, 1, 1); border-radius: 10px; margin: 50px 500px;background-color: #8FAE04; ">
+        <img src="./images/1200px-Regular_triangle.svg.png" alt="" style="height: 200px; width: 200px;">
+
+<p style="color: brown;font-weight: 600; font-size: 20px;">Area of Triangle <br>Input the hight and base</p>     
+   <p style="color: brown;font-weight: 300; font-size: 20px;">Answer: <span id="answer"></span> </p>
+<input id="firstInput" type="text" placeholder="height" style="border-radius: 15px;border: 2px solid brown; padding: 8px;  text-align: center;">
+<input id="secondInput" type="text" placeholder="base" style="border-radius: 15px;border: 2px solid brown; padding: 8px;  text-align: center;"> <br> <br>
+<div style="margin: 5px;">
+    <button id="calBtn" style="padding: 8px 22px;font-size: 15px; border-radius: 20px; border: none; background-color: brown; color: white;">Calculate</button>
+</div>
+    </div>
+
+
+
+
+    <script>
+document.getElementById('calBtn').addEventListener('click' , function(){
+let input1 = document.getElementById('firstInput');
+let input2 = document.getElementById('secondInput');
+let input1value = parseInt(input1.value);
+let input2value = parseInt(input2.value);
+let sum = 1/2 * input1value * input2value;
+let answer = document.getElementById('answer')
+answer.innerText = sum;
+console.log(answer.innerText);
+})
+    </script>
+</body>
+</html>
